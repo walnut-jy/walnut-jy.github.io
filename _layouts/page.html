@@ -11,6 +11,10 @@ pagination:
   </header>
 
   {% include page_divider.html %}
+	
+	{% for post in paginator.posts %}
+  <h1>{{ post.title }}</h1>
+{% endfor %}
 
   <article class="post-content">
     {{ content }}
